@@ -9,14 +9,7 @@ namespace Zoo.Mamals
     internal class Dog : Animal
     {
         public string DogRace { get; set; }
-        public override string Name { get; set; }
-        public override int Height { get; set; }
-        //public string Gender { get; set; }
-        //public  int Age { get; set; }
-        public override double Weight { get; set; }
-        public override bool IsHungry { get; set; }
-        public override bool IsAsleep { get; set; }
-        public override bool IsEndangered { get; set; }
+
 
         public Dog(string dogRace = "Unknown", string name = "Nameless", int height = 1, string gender = "Unknown", int age = 1, double weight = 1.0, bool isHungry = true, bool isAsleep = true, bool isEndangered = false)
         {

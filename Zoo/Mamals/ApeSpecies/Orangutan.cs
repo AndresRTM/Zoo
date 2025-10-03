@@ -8,19 +8,7 @@ namespace Zoo.Mamals.ApeSpecies
 {
     internal class Orangutan : Ape
     {
-
-        //unik properties
-        //----skriv här
-
         public double ArmLength { get; set; }
-        public override string FavoriteFood { get; set; }
-        public override bool IsSwinging { get; set; }
-        public override string Name { get; set; }
-        public override int Height { get; set; }
-        public override double Weight { get; set; }
-        public override bool IsHungry { get; set; }
-        public override bool IsAsleep { get; set; }
-        public override bool IsEndangered { get; set; }
 
         public Orangutan(string favoriteFood = "Durian", bool isSwinging = false, string name = "Nameless",
                              int height = 1, string gender = "Unknown", int age = 1, double weight = 1.0,

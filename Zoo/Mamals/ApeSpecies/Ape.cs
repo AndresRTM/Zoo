@@ -9,22 +9,13 @@ namespace Zoo.Mamals.ApeSpecies
     internal abstract class Ape : Animal
 
     {
-        public abstract string FavoriteFood { get; set; }
-        public abstract bool IsSwinging { get; set; }
-        public override string Name { get; set; }
-        public override int Height { get; set; }
-        public string Gender { get; set; }
-        public  int Age { get; set; }
-        public override double Weight { get; set; }
-        public override bool IsHungry { get; set; }
-        public override bool IsAsleep { get; set; }
-        public override bool IsEndangered { get; set; }
+        public string FavoriteFood { get; set; }
+        public bool IsSwinging { get; set; }  
 
-        public Ape(string gender, int age)
+        public Ape(string favoriteFood, bool isSwinging)
         {
-            Gender = gender;
-            Age = age;
-        
+            FavoriteFood = favoriteFood;
+            IsSwinging = isSwinging;        
         }
 
         public override void MakeSound()
@@ -40,7 +31,7 @@ namespace Zoo.Mamals.ApeSpecies
             Console.WriteLine($"{Name} found a comfortable spot to sleep.. ZzzZzzz...");
         }
 
-        
+
         public void SwingBetweenTrees()
         {
             IsSwinging = true;

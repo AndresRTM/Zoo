@@ -1,29 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Zoo.Mamals.ApeSpecies
+﻿namespace Zoo.Mamals.ApeSpecies
 {
-    internal class Orangutan : Ape
+    internal class Orangutan : Ape, IWild
     {
         public double ArmLength { get; set; }
 
         public Orangutan(string favoriteFood = "Durian", bool isSwinging = false, string name = "Nameless",
                              int height = 1, string gender = "Unknown", int age = 1, double weight = 1.0,
-                             bool isHungry = true, bool isAsleep = true, bool isEndangered = false) : base(gender, age)
+                             bool isHungry = true, bool isAsleep = true) : base(favoriteFood, isSwinging)
         {
-
             Name = name;
             Height = height;
             Weight = weight;
             Weight = weight;
             IsHungry = isHungry;
             IsAsleep = isAsleep;
-            IsEndangered = isEndangered;
         }
-
 
         public override void MakeSound()
         {
@@ -38,13 +29,11 @@ namespace Zoo.Mamals.ApeSpecies
             Console.WriteLine($"{Name} found a comfortable spot to sleep on.. ZzzZzzz...");
         }
 
-
         public void SwingBetweenTrees()
         {
             IsSwinging = true;
             Console.WriteLine($"{Name} swings  between the trees.");
         }
-
 
         public void ClimbTree()
         {
@@ -56,7 +45,6 @@ namespace Zoo.Mamals.ApeSpecies
             Console.WriteLine($"{Name} throws a banana at a nearby visitor!");
         }
 
-        //unika  
         public void HangUpsideDown()
         {
             Console.WriteLine($"{Name} hangs upside down from a branch, and observes its surroundings.");
@@ -65,6 +53,17 @@ namespace Zoo.Mamals.ApeSpecies
         public void WaveHello()
         {
             Console.WriteLine($"{Name} waves hello to a visitor.");
+        }
+
+        public void attack()
+        {
+            Console.WriteLine($"{Name} is attacking, RUN!! ");
+        }
+
+        public void hunt()
+        {
+            Console.WriteLine($"{Name} is haunting for food");
+
         }
 
 

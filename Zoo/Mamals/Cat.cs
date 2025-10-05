@@ -10,7 +10,8 @@ namespace Zoo.Mamals
     {
         public string CatRace { get; set; }
  
-        public Cat(string catRace = "Unknown", string name = "Nameless", int height = 1, string gender = "Unknown", int age = 1, double weight = 1.0, bool isHungry = true, bool isAsleep = true, bool isEndangered = false)
+        public Cat(string catRace = "Unknown", string name = "Nameless", int height = 1, 
+                    string gender = "Unknown", int age = 1, double weight = 1.0, bool isHungry = true, bool isAsleep = true)
         {
             CatRace = catRace;
             Name = name;
@@ -20,7 +21,6 @@ namespace Zoo.Mamals
             Weight = weight;
             IsHungry = isHungry;
             IsAsleep = isAsleep;
-            IsEndangered = isEndangered;
         }
 
         public override void MakeSound()

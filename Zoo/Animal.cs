@@ -15,12 +15,7 @@ namespace Zoo
         public double Weight { get; set; }
         public bool IsHungry { get; set; }
         public bool IsAsleep { get; set; }
-        public bool IsEndangered { get; set; }
-
-
-
         public abstract void MakeSound();
-
         public abstract void Eat();
         public abstract void Sleep();
 

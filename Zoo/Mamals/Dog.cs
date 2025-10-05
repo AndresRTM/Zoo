@@ -11,7 +11,7 @@ namespace Zoo.Mamals
         public string DogRace { get; set; }
 
 
-        public Dog(string dogRace = "Unknown", string name = "Nameless", int height = 1, string gender = "Unknown", int age = 1, double weight = 1.0, bool isHungry = true, bool isAsleep = true, bool isEndangered = false)
+        public Dog(string dogRace = "Unknown", string name = "Nameless", int height = 1, string gender = "Unknown", int age = 1, double weight = 1.0, bool isHungry = true, bool isAsleep = true)
         {
             DogRace = dogRace;
             Name = name;
@@ -20,8 +20,7 @@ namespace Zoo.Mamals
             Age = age;
             Weight = weight;
             IsHungry = isHungry;
-            IsAsleep = isAsleep;
-            IsEndangered = isEndangered;
+            IsAsleep = isAsleep;            
         }
 
         public override void MakeSound()
@@ -35,13 +34,7 @@ namespace Zoo.Mamals
         public override void Sleep()
         {
             Console.WriteLine($"{Name} is sleeping..ZzzZzzz...");
-        }
-
-        // Unika metoder
-        public void FetchBall()
-        {
-            Console.WriteLine($"{Name} is fetching the ball!");
-        }
+        } 
 
         public void SearchForCandy()
         {

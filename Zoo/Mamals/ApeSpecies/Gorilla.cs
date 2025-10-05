@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Zoo.Mamals.ApeSpecies
 {
-    internal class Gorilla : Ape
+    internal class Gorilla : Ape, IDomestic
     {
         public bool IsSilverback { get; set; }
 
         public Gorilla(string favoriteFood = "fresh leaves", bool isSwinging = false, string name = "Nameless",
                             int height = 1, string gender = "Unknown", int age = 1, double weight = 1.0,
-                            bool isHungry = true, bool isAsleep = true, bool isEndangered = false, bool isSilverback = false) : base(favoriteFood, isSwinging)
+                            bool isHungry = true, bool isAsleep = true, bool isSilverback = false) : base(favoriteFood, isSwinging)
         {
             IsSilverback = isSilverback;
             Name = name;
@@ -20,8 +20,7 @@ namespace Zoo.Mamals.ApeSpecies
             Weight = weight;
             Weight = weight;
             IsHungry = isHungry;
-            IsAsleep = isAsleep;
-            IsEndangered = isEndangered;
+            IsAsleep = isAsleep;            
             IsSilverback = isSilverback;
         }
 
@@ -38,13 +37,11 @@ namespace Zoo.Mamals.ApeSpecies
             Console.WriteLine($"{Name} found a comfortable spot to sleep on.. ZzzZzzz...");
         }
 
-
         public void SwingBetweenTrees()
         {
             IsSwinging = true;
             Console.WriteLine($"{Name} swings  between the trees.");
         }
-
 
         public void ClimbTree()
         {
@@ -55,8 +52,7 @@ namespace Zoo.Mamals.ApeSpecies
         {
             Console.WriteLine($"{Name} throws a banana at a nearby visitor!");
         }
-
-        //unika  
+  
         public void BeatChest()
         {
             Console.WriteLine($"{Name} beats its chest!");
@@ -67,7 +63,14 @@ namespace Zoo.Mamals.ApeSpecies
             Console.WriteLine($"{Name} climbs the steep mountain terrain with ease.");
         }
 
+        public void Train()
+        {
+            Console.WriteLine($"{Name} is training");
+        }
 
-
+        public void Play()
+        {
+            Console.WriteLine($"{Name} is playing");
+        }
     }
 }

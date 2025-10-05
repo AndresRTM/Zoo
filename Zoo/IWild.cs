@@ -10,6 +10,5 @@ namespace Zoo
     {
         void attack();
         void hunt();
-        void aggressive();
     }
 }

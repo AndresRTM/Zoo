@@ -11,8 +11,8 @@ namespace Zoo.Mamals
         public bool HasHorn { get; set; }
         public double MilkProductionPerDay { get; set; }
 
-
-        public Cow(bool hasHorn = false, double milkProductionPerDay = 0.0, string name = "Nameless", int height = 1, string gender = "Unknown", int age = 1, double weight = 1.0, bool isHungry = true, bool isAsleep = true, bool isEndangered = false)
+        public Cow(bool hasHorn = false, double milkProductionPerDay = 0.0, string name = "Nameless", int height = 1,
+            string gender = "Unknown", int age = 1, double weight = 1.0, bool isHungry = true, bool isAsleep = true)
         {
             HasHorn = hasHorn;
             MilkProductionPerDay = milkProductionPerDay;
@@ -23,7 +23,6 @@ namespace Zoo.Mamals
             Weight = weight;
             IsHungry = isHungry;
             IsAsleep = isAsleep;
-            IsEndangered = isEndangered;
         }
 
         public override void MakeSound()

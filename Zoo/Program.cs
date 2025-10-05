@@ -1,6 +1,4 @@
-﻿
-using System.Runtime.InteropServices;
-//using Zoo.Mamals.ApeSpecies;
+﻿using System.Runtime.InteropServices;
 
 namespace Zoo.Mamals.ApeSpecies;
 
